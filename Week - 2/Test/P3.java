@@ -1,5 +1,3 @@
-package Solutions.Test;
-
 public class P3 
 {
     public static void main(String[]args)

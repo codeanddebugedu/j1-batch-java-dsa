@@ -1,4 +1,3 @@
-package Solutions.Test;
 import java.util.Scanner;
 public class P1 
 {
