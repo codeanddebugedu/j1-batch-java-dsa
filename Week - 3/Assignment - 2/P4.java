@@ -15,6 +15,7 @@ public class P4
             System.out.print("Enter Value: ");
             a[i]=sc.nextInt();
         }
+        sc.close();
         int max=Integer.MIN_VALUE;
         for(i=0;i<n;i++)
         {
