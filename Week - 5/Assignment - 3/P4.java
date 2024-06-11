@@ -9,7 +9,7 @@ public class P4
             FileReader filereader = new FileReader("DSA.txt");   
         }  
         // catching exception thrown by the try block  
-        catch(Exception e) {  
+        catch(FileNotFoundException e) {  
             System.out.println(e);  
         }       
     }    
