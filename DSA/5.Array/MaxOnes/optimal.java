@@ -1,4 +1,3 @@
-package Array.MaxOnes;
 
 public class optimal 
 {
