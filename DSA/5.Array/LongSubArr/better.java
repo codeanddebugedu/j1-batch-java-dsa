@@ -2,16 +2,15 @@ public class better
 {
     public static int getLongestSubarray(int []a, long k) 
     {
-        int n = a.length; // size of the array.
+        int n = a.length;
 
         int len = 0;
-        for (int i = 0; i < n; i++) { // starting index
-            long s = 0; // Sum variable
-            for (int j = i; j < n; j++) { // ending index
-                // add the current element to
-                // the subarray a[i...j-1]:
+        for (int i = 0; i < n; i++) 
+        { 
+            long s = 0; 
+            for (int j = i; j < n; j++) 
+            { 
                 s += a[j];
-
                 if (s == k)
                     len = Math.max(len, j - i + 1);
             }
