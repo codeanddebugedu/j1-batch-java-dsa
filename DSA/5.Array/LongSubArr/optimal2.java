@@ -16,10 +16,11 @@ public class optimal2 {
             // calculate the sum of remaining part i.e. x-k:
             long rem = sum - k;
             //Calculate the length and update maxLen:
-            // if (preSumMap.containsKey(rem)) {
-            // }
-            int len = i - preSumMap.get(rem);
-            maxLen = Math.max(maxLen, len);
+            if (preSumMap.containsKey(rem)) {
+                int len = i - preSumMap.get(rem);
+                maxLen = Math.max(maxLen, len);
+            }
+            //Finally, update the map checking the conditions:
             if (!preSumMap.containsKey(sum)) {
                 preSumMap.put(sum, i);
             }
@@ -29,8 +30,8 @@ public class optimal2 {
     }
 
     public static void main(String[] args) {
-        int[] a = {2, 3, 5, 1, 9};
-        long k = 10;
+        int[] a = {1,2,3,1,1,1,1,4,2,3};
+        long k = 3;
         int len = getLongestSubarray(a, k);
         System.out.println("The length of the longest subarray is: " + len);
     }
