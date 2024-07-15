@@ -8,12 +8,17 @@ public class optimal {
         int el = 0; // Element
 
         //applying the algorithm:
-        for (int i = 0; i < n; i++) {
-            if (cnt == 0) {
+        for (int i = 0; i < n; i++) 
+        {
+            if (cnt == 0) 
+            {
                 cnt = 1;
                 el = v[i];
-            } else if (el == v[i]) cnt++;
-            else cnt--;
+            } 
+            else if (el == v[i]) 
+                cnt++;
+            else 
+                cnt--;
         }
 
         //checking if the stored element
